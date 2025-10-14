@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="
+   https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
+   "></script>
+   <style>
+        .result{
+            color: rgb(54, 39, 189);
+            border: 8px solid hsl(120, 66%, 41%);
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px
+        }
+   </style>
+</head>
+<body>
+ 
+    <h2>Simple Calculator</h2>
+     <input type="number" id="num1" placeholder="Enter first number">
+     <input type="number" id="num2" placeholder="Enter second number">
+     <button >Add</button>
+     <p id="result" >Result: </p>  
+     
+     <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var num1 = parseInt($("#num1").val());
+                var num2 = parseInt($("#num2").val());
+                var result = num1 + num2;
+                $("#result").text("Result: " + result);
+                $("#result").addClass("result");
+            });
+        });
+     </script>
+   
+</body>
+</html>

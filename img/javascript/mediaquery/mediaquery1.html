@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         body{
+             background-color: rgb(120, 212, 212);
+             color: rgb(13, 59, 34)
+         }
+        h1{
+            text-align: center;
+            margin-top: 20px 0;
+        }
+        .container{
+            max-width: 1200px;
+            margin:  auto;
+            padding:  20px;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .card{
+            position: relative;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px 0px rgba(66, 65, 65, 0.2);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            background-image:url('https://images.unsplash.com/photo-1527007600233-297cfcf1d7c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zmxvd2VyJTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D');
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        .card-content{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(56, 55, 55, 0.5);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+       .card-content h3{
+           margin: 0px;
+           font-size: 1.1rem;
+           color:rgb(245, 232, 232) ;
+       }
+           
+            .card-content p{
+                font-size: 0.8rem;
+                color: azure;
+            }
+            .card-content h3{
+                margin: 0px;
+                font-size: 0.9rem;
+                color: rgb(245, 116, 24);
+            }
+      .card-content p{
+          font-size: 0.6rem;
+          color: rgb(70, 235, 70);
+      }
+      /* 1000 */
+      @media (max-width: 992px){
+        .card{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .card{
+            background-color: blueviolet;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlhWlXRz1o7YmUr3nyNbFKSJ9xF5wSQVVAGw&s');
+        }
+        .card img{
+            display: none;
+        }
+
+        }
+          /* 700 */
+        @media (max-width: 768px){
+        .card{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .card{
+            background-color: blueviolet;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlhWlXRz1o7YmUr3nyNbFKSJ9xF5wSQVVAGw&s');
+        }
+        .card img{
+            display: none;
+        }
+        
+        }
+        /* 500 */
+        @media (max-width: 488px){
+        .card{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .card{
+            background-color: blueviolet;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_rUi7Gv-qa1F2D3PRY56-aUXXKNUrGQCeng&s');
+        }
+        .card img{
+            display: none;
+        }
+        
+        }      
+
+     
+    </style>
+</head>
+
+    <body>
+        <div class="conatiner">
+            <h1> Products</h1>
+            <div class="cards">
+                <!-- card 1 -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3> Product 1</h3>
+                        <p> this is Product Description</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3> Product 2</h3>
+                        <p> this is Product Description</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3> Product 3</h3>
+                        <p> this is Product Description</p>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3> Product 4</h3>
+                        <p> this is Product Description</p>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3> Product 5</h3>
+                        <p> this is Product Description</p>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3> Product 6</h3>
+                        <p> this is Product Description</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+    
+        </div>
+    </body>
+
+</html>

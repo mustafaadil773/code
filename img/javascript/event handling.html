@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event handling example</title>
+</head>
+<body>
+    <h2>click the button below:</h2>
+    <button id="mybutton">click me!</button>
+    <p id="message"></p>
+    <script>
+       //get the button element
+       const button = document.getElementById('mybutton');
+
+       // add a click event listener to the button
+       button.addEventListener('click', function() {
+           //when the button is clicked  change the text content of the <p> tag
+
+           document.getElementById('message').textContent = 'you clicked the button!';
+       });
+    </script>
+    <!-- you can change "click" to other events like mouseover, dbclick,  or keydown, to see how event types work -->
+</body>
+</html>
